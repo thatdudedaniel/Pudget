@@ -1,6 +1,6 @@
 #version 1.0
 
-#Fill in list of bills here
+#List of bills here
 Bills=[650,30,60,20,65,97]
 
 def add(Bills):
@@ -9,7 +9,7 @@ def add(Bills):
         Total+=i
         return Total
 
-#Your Paycheck goes here
+#Amount of Paycheck goes here
 paycheck=900
 
 result=add(Bills)
