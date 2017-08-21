@@ -1,6 +1,6 @@
-#version 1.0
+#version 1.1
 
-#List of bills here
+#List of bills in values
 Bills=[650,30,60,20,65,97]
 
 def add(Bills):
@@ -9,12 +9,17 @@ def add(Bills):
         Total+=i
         return Total
 
-#Amount of Paycheck goes here
-paycheck=900
+#Amount of income 
+Income=900
+
+#Some other examples of income:
+#Income2=500 
+#TaxReturn=1400
+
 
 result=add(Bills)
 
-print("Pacheck:", paycheck)
+print("Total Income:", Income )
 print("Total amount of bills per month:", result)
 print("Total amount needed to save each check:", result /2)
-print("Leftover each check:", paycheck - result /2)
+print("Leftover each check:", Income - result /2)
